@@ -1,10 +1,12 @@
-function myFunction(){
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav"){
-        x.className += "responsive";
-    }else{
-        x.className = "topnav";
+function myFunctionPrueba() {
+    var x = document.getElementById("myNavegacion");
+    if (x.className === "navegacion") {
+    x.className += " responsive";
+    } else {
+    x.className = "navegacion";
     }
 }
 
-
+function myFunctionMenu(x){
+    x.classList.toggle("change");
+}
