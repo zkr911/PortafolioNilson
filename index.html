@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nilson Guerrero Albornoz</title>
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/styleMenuNav.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -20,21 +23,28 @@
     </header>
 
 
-   
-    <div class="">
-       
-        <div class="topnav" id="myTopnav">
-            
+    <div class="container">
+        <div class="navegacion" id="myNavegacion">
             <a href="#" >Home</a>
             <a href="#" >Presentacion</a>
             <a href="#">Contacto</a>
             <a href="#">Formulario</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                
-            
-        </div>
     
+            <div class="menu"  onclick="myFunctionMenu(this); myFunctionPrueba()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+    
+        </div>
+
     </div>
+ 
+   
+
+
+
+ 
     
 
     <div class="container">
@@ -62,7 +72,7 @@
                 <br> <br>
                 <input type="text" placeholder="Primer Apellido">
                 <br> <br>
-                <input type="text" placeholder="Segundo Apellido">
+                <input type="email" placeholder="Ejemplo@gmail.com">
                 <br> <br>
                 <button type="submit" class="btn btn-success">Enviar</button>
                 
@@ -71,20 +81,28 @@
     </div>
     <br>
     <footer>
-
+       
     </footer>
 
 <script src="js/navResponsive.js"></script>
+
 <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+    function myFunctionMenu(x){
+        x.classList.toggle("change");
     }
 </script>
+<script>
+    function myFunctionPrueba() {
+        var x = document.getElementById("myNavegacion");
+        if (x.className === "navegacion") {
+        x.className += " responsive";
+        } else {
+        x.className = "navegacion";
+        }
+    }
+</script>
+
+
 </body>
 
 </html>
